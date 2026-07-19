@@ -1,7 +1,4 @@
 # kaizen (改善)
-
-*kaizen* means "continuous improvement" in japanese. this repo is my small, steady steps toward creating something better.
-
 ---
 
 A from-scratch implementation of a modern large language model in PyTorch.
