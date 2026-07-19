@@ -1,0 +1,27 @@
+[project]
+name = "kaizen"
+version = "0.1.0"
+description = "a modern llm - built from scratch."
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "torch~=2.11.0",
+    "numpy>=2.4",
+    "einops>=0.8",
+    "einx>=0.4",
+    "jaxtyping>=0.3",
+    "regex>=2026.3.32",
+    "tiktoken>=0.12.0",
+    "tqdm>=4.67",
+    "wandb>=0.25",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"k
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[tool.uv]
+python-preference = "managed"
